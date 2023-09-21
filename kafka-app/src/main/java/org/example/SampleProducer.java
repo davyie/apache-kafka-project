@@ -12,7 +12,7 @@ public class SampleProducer {
         properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
-        ProducerRecord producerRecord = new ProducerRecord("channel", "name", "This is awesome!");
+        ProducerRecord producerRecord = new ProducerRecord("tesla", "name", "Tesla!");
 
         KafkaProducer kafkaProducer = new KafkaProducer(properties);
         kafkaProducer.send(producerRecord);
